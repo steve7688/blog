@@ -1,12 +1,12 @@
 /*
- * @Author: steve steve7688@163.com
- * @Date: 2022-05-04 10:49:45
- * @LastEditors: steve steve7688@163.com
- * @LastEditTime: 2022-05-04 17:30:49
+ * @Author: Steve
+ * @Date: 2022-05-04 20:30:56
+ * @LastEditors: Steve
+ * @LastEditTime: 2022-05-06 22:05:53
  * @FilePath: /blog/routers/router.go
  * @Description:路由相关
  *
- * Copyright (c) 2022 by steve steve7688@163.com, All Rights Reserved.
+ * Copyright (c) 2022 by 深圳贤齐科技有限公司, All Rights Reserved.
  */
 package routers
 
@@ -17,11 +17,11 @@ import (
 )
 
 /**
- * @Description:设置路由
- * @User: Steve
- * @Date: 2022-05-04 17:23:11
- * @param {*}
- * @return {*}
+ * @Description: 设置路由
+ * @Author: Steve
+ * @Date: 2022-05-06 22:05:51
+ * @Param:
+ * @Return:
  */
 func SetUpRouters() {
 
@@ -31,6 +31,9 @@ func SetUpRouters() {
 	//auth
 	v1.POST("/login", auth.Login)
 
-	r.Run(":8080")
+	err := r.Run(":8080")
+	if err != nil {
+		panic(err)
+	}
 
 }

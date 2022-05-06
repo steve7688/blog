@@ -1,16 +1,18 @@
 /*
- * @Author: steve steve7688@163.com
- * @Date: 2022-05-04 11:18:15
- * @LastEditors: steve steve7688@163.com
- * @LastEditTime: 2022-05-04 17:55:30
+ * @Author: Steve
+ * @Date: 2022-05-04 20:30:56
+ * @LastEditors: Steve
+ * @LastEditTime: 2022-05-06 22:44:24
  * @FilePath: /blog/error/error.go
- * @Description:错误处理
+ * @Description:错误相关
  *
- * Copyright (c) 2022 by steve steve7688@163.com, All Rights Reserved.
+ * Copyright (c) 2022 by 深圳贤齐科技有限公司, All Rights Reserved.
  */
 package error
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 //---------------错误码---------------\\
 const (
@@ -30,16 +32,16 @@ type MyError struct {
 }
 
 /**
- * @Description: 根据错误码创建一个错误对象
- * @User: Steve
- * @Date: 2022-05-04 17:21:26
+ * @description: 用错误码创建错误
  * @param {int} code
  * @return {*}
+ * @user: Steve
+ * @Date: 2022-05-06 22:17:22
  */
 func CreateNewErrorWithCode(code int) (myErr *MyError) {
 
-	chinese := errs_chinese[code]
-	english := errs_english[code]
+	chinese := chinese[code]
+	english := english[code]
 
 	if chinese == "" || english == "" { //没配置该错误码--返回未知错误
 		return CreateNewErrorWithCode(UNKNOW_ERROR)
@@ -54,11 +56,11 @@ func CreateNewErrorWithCode(code int) (myErr *MyError) {
 }
 
 /**
- * @Description: 错误提示国际化
- * @User: Steve
- * @Date: 2022-05-04 17:33:16
+ * @description: 错误国际化
  * @param {*gin.Context} c
  * @return {*}
+ * @user: Steve
+ * @Date: 2022-05-06 22:17:14
  */
 func (err *MyError) Localization(c *gin.Context) string {
 

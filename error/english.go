@@ -1,20 +1,21 @@
 /*
- * @Author: steve steve7688@163.com
- * @Date: 2022-05-04 17:44:19
- * @LastEditors: steve steve7688@163.com
- * @LastEditTime: 2022-05-04 17:56:05
+ * @Author: Steve
+ * @Date: 2022-05-04 20:30:56
+ * @LastEditors: Steve
+ * @LastEditTime: 2022-05-06 22:45:15
  * @FilePath: /blog/error/english.go
- * @Description:错误提示多语言--英文配置文件
+ * @Description:英文错误码
  *
- * Copyright (c) 2022 by steve steve7688@163.com, All Rights Reserved.
+ * Copyright (c) 2022 by 深圳贤齐科技有限公司, All Rights Reserved.
  */
 package error
 
 //---------------错误码对应的[英文]释义---------------\\
-var errs_english = map[int]string{
+
+var english = map[int]string{
 
 	//global
-	UNKNOW_ERROR: "Unknow error",
+	UNKNOW_ERROR: "Unknown error",
 
 	//auth
 	AUTH_MOBILE_NULL:               "Mobile number cannot be null",

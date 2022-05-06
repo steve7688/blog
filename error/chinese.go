@@ -1,17 +1,18 @@
 /*
- * @Author: steve steve7688@163.com
- * @Date: 2022-05-04 17:43:34
- * @LastEditors: steve steve7688@163.com
- * @LastEditTime: 2022-05-04 17:56:11
+ * @Author: Steve
+ * @Date: 2022-05-04 20:30:56
+ * @LastEditors: Steve
+ * @LastEditTime: 2022-05-06 22:45:11
  * @FilePath: /blog/error/chinese.go
- * @Description:错误提示多语言--中文配置文件
+ * @Description:中文错误码
  *
- * Copyright (c) 2022 by steve steve7688@163.com, All Rights Reserved.
+ * Copyright (c) 2022 by 深圳贤齐科技有限公司, All Rights Reserved.
  */
 package error
 
 //---------------错误码对应的[中文]释义---------------\\
-var errs_chinese = map[int]string{
+
+var chinese = map[int]string{
 
 	//global
 	UNKNOW_ERROR: "未知错误",

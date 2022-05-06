@@ -1,12 +1,12 @@
 /*
- * @Author: steve steve7688@163.com
- * @Date: 2022-05-04 11:04:22
- * @LastEditors: steve steve7688@163.com
- * @LastEditTime: 2022-05-04 17:32:36
+ * @Author: Steve
+ * @Date: 2022-05-04 20:30:56
+ * @LastEditors: Steve
+ * @LastEditTime: 2022-05-06 22:02:36
  * @FilePath: /blog/models/user.go
  * @Description:用户相关
  *
- * Copyright (c) 2022 by steve steve7688@163.com, All Rights Reserved.
+ * Copyright (c) 2022 by 深圳贤齐科技有限公司, All Rights Reserved.
  */
 package models
 
@@ -22,9 +22,7 @@ type UserModel struct {
 }
 
 /**
- * @Description: 登录方法
- * @User: Steve
- * @Date: 2022-05-04 17:18:40
+ * @description: 登录
  * @param {*} mobile
  * @param {string} password
  * @return {*}

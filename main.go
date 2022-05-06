@@ -1,8 +1,8 @@
 /*
  * @Author: steve steve7688@163.com
  * @Date: 2022-05-04 10:11:12
- * @LastEditors: steve steve7688@163.com
- * @LastEditTime: 2022-05-04 17:31:08
+ * @LastEditors: Steve
+ * @LastEditTime: 2022-05-06 22:17:02
  * @FilePath: /blog/main.go
  * @Description:程序入口文件
  *
@@ -15,11 +15,11 @@ import (
 )
 
 /**
- * @Description: 程序入口
- * @User: Steve
- * @Date: 2022-05-04 17:30:37
+ * @description: 程序入口
  * @param {*}
  * @return {*}
+ * @user: Steve
+ * @Date: 2022-05-06 22:16:56
  */
 func main() {
 
