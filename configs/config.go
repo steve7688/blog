@@ -2,7 +2,7 @@
  * @Author: Steve
  * @Date: 2022-05-04 20:30:56
  * @LastEditors: Steve
- * @LastEditTime: 2022-05-06 21:53:24
+ * @LastEditTime: 2022-05-06 23:23:54
  * @FilePath: /blog/configs/config.go
  * @Description:配置相关类
  *
@@ -12,7 +12,7 @@ package config
 
 import "fmt"
 
-func Configs() {
+func init() {
 
 	fmt.Println("configs here")
 
